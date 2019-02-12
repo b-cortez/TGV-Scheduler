@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Homework 7</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+                
+        <div class="jumbotron" id="jumbotron">
+                <h1 class="display-4">
+                    <strong>
+                    <i class="fas fa-train"></i>&nbsp; TGV Scheduler</strong>
+                </h1>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+            </div>
+            <div class="row">
+                    <div class="col-sm-12">
+                      <br>
+            <div class="card">
+                    <div class="card-header" id="card-header">
+                      Current Train Schedule
+                    </div>
+            <table class="table table-dark" id="trainTable">
+                    <thead>
+                      <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)
+                        </th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Destination</td>
+                        <td>Frequency</td>
+                        <td>Arrival</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+
+                  <div class="card">
+                        <div class="card-header" id="card-header">
+                          Add Train
+                        </div>
+                        <br>
+                  <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Train Name</label>
+                          <input type="text" class="form-control" id="train">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Destination</label>
+                          <input type="text" class="form-control" id="destination">
+                        </div>
+
+                        <div class="form-group">
+                         <label for="exampleInputEmail1">First Train Time (HH:MM)</label>
+                         <input type="text" class="form-control" id="nextArrival">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Frequency (min)</label>
+                          <input type="text" class="form-control" id="minutesAway">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="addTrain">Submit</button>
+                      </form>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
