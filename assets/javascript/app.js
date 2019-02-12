@@ -17,10 +17,10 @@ var config = {
 	$("#addTrain").on("click", function(){
 
 		// Grabs user input and assign to variables
-		var train = $("#train").val().trim();
-        var destination = $("#destination").val().trim();
-        var trainFrequency = $("#trainFrequency").val().trim();
-        var nextArrival = $("#nextArrival").val().trim();
+		var train = $("#trainInput").val().trim();
+        var destination = $("#destinationInput").val().trim();
+        var trainFrequency = $("#trainFrequencyInput").val().trim();
+        var nextArrival = $("#nextArrivalInput").val().trim();
 		var minutesAway = moment($("#minutesAway").val().trim(), "HH:mm").subtract(10, "years").format("X");;
         
         // Testing for variables entered
@@ -43,6 +43,6 @@ var config = {
         trainData.push(newTrain);
 
         // Append train info to table on page
-		$("#trainTable > tbody").append("<tr><td>" + firebaseName + "</td><td>" + firebaseLine + "</td><td>"+ firebaseDestination + "</td><td>" + firebaseFrequency + " mins" + "</td><td>" + nextArrival + "</td><td>" + minutes + "</td></tr>");
+		$("#trainTable > tbody").append("<tr><td>" + trainName + "</td><td>" + trainDestination  + "</td><td>" + trainFrequency + " mins" + "</td><td>" + nextArrival + "</td><td>" + minutesAway + "</td></tr>");
 
 	});
