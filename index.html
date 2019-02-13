@@ -17,7 +17,7 @@
                     <i class="fas fa-train"></i>&nbsp; TGV Scheduler</strong>
                 </h1>
                 <hr class="my-4">
-                <h2 id="currentTime"> The current time is:</h2>
+                <h2>The current time is:<div id="time">The current time is: </div></h2>
             </div>
 
             <div class="row">
@@ -57,28 +57,29 @@
                   <form>
                         <div class="form-group">
                           <label for="exampleInputEmail1">Train Name</label>
-                          <input type="text" class="form-control" id="train">
+                          <input type="text" class="form-control" id="trainInput">
                         </div>
 
                         <div class="form-group">
                           <label for="exampleInputPassword1">Destination</label>
-                          <input type="text" class="form-control" id="destination">
+                          <input type="text" class="form-control" id="destinationInput">
                         </div>
 
                         <div class="form-group">
                          <label for="exampleInputEmail1">First Train Time (HH:MM)</label>
-                         <input type="text" class="form-control" id="nextArrival">
+                         <input type="text" class="form-control" id="nextArrivalinput">
                         </div>
 
                         <div class="form-group">
                           <label for="exampleInputPassword1">Frequency (min)</label>
-                          <input type="text" class="form-control" id="minutesAway">
+                          <input type="text" class="form-control" id="minutesAwayInput">
                         </div>
 
                         <button type="submit" class="btn btn-primary" id="addTrain">Submit</button>
                       </form>
 
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
 <script src="assets/javascript/app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
 </body>
 </html>
